@@ -57,7 +57,7 @@ Both factors contribute independently, with slight diminishing returns when comb
 
 ## Results
 
-Tested on GPT-4, GPT-4o families using augmented FinChain data:
+Tested on GPT-4, GPT-4o and GPT-5 families using augmented FinChain data:
 
 - **Primary**: Value Correctness 69.1% → 84.0% (what actually matters)
 - **Exploratory**: Dependency extraction (45% → 78%), Cascade awareness (0.5% → 50%) - but metrics are brittle
