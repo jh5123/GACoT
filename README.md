@@ -91,8 +91,9 @@ cp .env.example .env  # Add OpenAI key
 python evaluate.py --model gpt-4o-mini gpt-4  # Uses cache
 python evaluate.py --force-api --model gpt-4o-mini  # Fresh run
 
-# View results
-python evaluate.py --aggregate gpt-4o-mini gpt-4
+# View results for models
+python evaluate.py --aggregate gpt-5 gpt-4o gpt-4.1-mini gpt-4o-mini gpt-5-nano gpt-4.1 gpt-5-chat-latest gpt-4.1-nano # All models
+python evaluate.py --aggregate gpt-4o-mini gpt-4 # Subset of models
 # See results/gacot_one_page_showcase.html
 ```
 

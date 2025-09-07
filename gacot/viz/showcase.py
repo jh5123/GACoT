@@ -41,8 +41,8 @@ def create_one_page_showcase(
         2, 3,
         height_ratios=[1.2, 0.8],
         width_ratios=[1.3, 1.1, 0.6],
-        hspace=0.5,
-        wspace=0.25
+        hspace=0.35,
+        wspace=0.5
     )
     
     # Normalize all results
@@ -236,7 +236,7 @@ def _add_regression_analysis(fig, gridspec, all_results: Dict):
         r2=r2
     )
     
-    ax.text(0.05, 0.95, eq_text, transform=ax.transAxes,
+    ax.text(0.05, 0.99, eq_text, transform=ax.transAxes,
            fontsize=9, verticalalignment='top', fontfamily='monospace',
            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.9))
     
@@ -303,7 +303,7 @@ def _add_model_comparison(fig, gridspec, all_results: Dict):
     ax.legend(loc='upper left', ncol=4, framealpha=0.9, fontsize=10)
     ax.axhline(y=0, color='black', linestyle='-', linewidth=1)
     ax.grid(True, alpha=0.3, axis='y')
-    ax.set_ylim(-0.2, 0.9)
+    ax.set_ylim(-0.25, 1.1)
     
     # Add colored background zones
     ax.axhspan(-0.25, 0, alpha=0.1, color='red')
