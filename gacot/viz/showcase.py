@@ -119,7 +119,7 @@ def _add_vc_heatmap(fig, gridspec, all_results: Dict):
     runtime_effect = avg_matrix[0, 1] - avg_matrix[0, 0]
     deps_effect = avg_matrix[1, 0] - avg_matrix[0, 0]
     
-    ax.text(0.5, -0.18, f'Runtime Effect: +{runtime_effect:.1%}',
+    ax.text(0.5, -0.1, f'Runtime Effect: +{runtime_effect:.1%}',
            transform=ax.transAxes, ha='center', fontsize=11,
            color='darkblue', fontweight='bold')
     ax.text(-0.18, 0.5, f'Deps Effect:\n+{deps_effect:.1%}',
