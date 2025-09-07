@@ -8,6 +8,9 @@ A framework to improve LLM accuracy on financial calculations through dependency
 
 This improvement correlates with explicit dependency handling, suggesting that financial reasoning benefits from structured tracking - though we measure correlation, not proven causation.
 
+![Results Chart](results/gacot_one_page_showcase.png)
+
+
 ## The Problem
 
 LLMs struggle with multi-step financial calculations that require dependency management:
