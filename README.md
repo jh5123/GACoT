@@ -22,7 +22,7 @@ This breaks core financial workflows like sensitivity analysis, waterfalls, and 
 
 ## Approach
 
-We test dependency reasoning through a 2×2 experimental design that isolates two interventions:
+We test dependency reasoning, across Personal Finance, M&A and Investment Analysis domains, through a 2×2 experimental design that isolates two interventions:
 
 ### 1. Dependencies in Dataset
 When enabled, we augment prompts with explicit dependency graphs:
@@ -57,7 +57,7 @@ Both factors contribute independently, with slight diminishing returns when comb
 
 ## Results
 
-Tested on GPT-4, GPT-4o and GPT-5 families using augmented FinChain data:
+Tested on GPT-4, GPT-4o and GPT-5 families:
 
 - **Primary**: Value Correctness 69.1% → 84.0% (what actually matters)
 - **Exploratory**: Dependency extraction (45% → 78%), Cascade awareness (0.5% → 50%) - but metrics are brittle
@@ -70,7 +70,7 @@ Financial models are dependency graphs. Every DCF, merger model, and portfolio o
 
 ## Metrics & Limitations
 
-**Critical caveat**: Most metrics measure surface-level patterns, not true understanding. Only Value Correctness directly measures capability.
+**Critical caveat**: Current metrics measure surface-level patterns, not true understanding. Only Value Correctness directly measures capability.
 
 - **Value Correctness (VC)**: Numerical accuracy within tolerance - our only ground-truth metric
 - **Dependency Graph Extraction (DGE)**: Detects dependency language/notation (correlational)
