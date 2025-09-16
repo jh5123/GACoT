@@ -1,3 +1,5 @@
+*Note: Solo research project. Academic "we" used throughout for convention.*
+
 # GACoT: Graph-Augmented Chain of Thought for Financial Reasoning
 
 A framework to improve LLM accuracy on financial calculations through dependency tracking and runtime scaffolding.
